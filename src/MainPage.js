@@ -32,8 +32,9 @@ export default function MainPage(){
           </h2>
 
           <img
-            src="https:weight-loss-FEATURE-GettyImages-580503159-1024x1024.jpeg"
-            alt="random-image"
+            src="https://www.mysouthernhealth.com/wp-content/uploads/2016/02/weight-loss-FEATURE-GettyImages-580503159-320x320.jpg
+            "
+            alt="tape-image"
           ></img>
         </main>
         <main className="main-section-two">
@@ -58,13 +59,14 @@ export default function MainPage(){
       </main>
       <p className="expert">
         <h1>Ask an Expert</h1>
-        <p>Do you have a question about surgery? Want to enquire about a procedure? Fill in the form and we will be in touch very soon.</p>
+        <p className="expert">Do you have a question about surgery? Want to enquire about a procedure? Fill in the form and we will be in touch very soon.</p>
       </p>
-      <form className="form">
+      <form className="expert-form">
         <input type="text" placeholder="First Name" />
         <input type="text" placeholder="Last Name" />
         <input type="email" placeholder="Email" />
         <input type="phone" placeholder="Phone Number" />
+        <textarea type="message" placeholder="Message" />
       </form>
       <footer className="footer">
         This is the footer: Here will go contact details and other links

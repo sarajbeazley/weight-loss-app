@@ -23,7 +23,7 @@ export default function FormPage() {
 
   return (
     <div className="form-body">
-      <p className="blue">Request A Callback | Weight Loss Specialists</p>
+      <p className="green-text">Request A Callback | Weight Loss Specialists</p>
       <h1>Callback Request</h1>
       <p>
         To get started, please provide us with some details and one of our
@@ -66,7 +66,7 @@ export default function FormPage() {
         <p className="input-info">Additional Info</p>
         <textarea value={formData.info} onChange={handleChange} name="info" className="textarea-input"/>
 
-  <button className="button-callback">Request callback</button>
+  <button className="button-request-callback">Request callback</button>
       </form>
       </container>
     </div>
