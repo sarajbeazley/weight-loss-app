@@ -8,15 +8,18 @@ export default function FormPage() {
     emailAddress: " ",
     phoneNumber: " ",
     info: " ",
+    marketing: true,
+    over18: true,
   });
 
   console.log(formData.info);
 
   function handleChange(event) {
+    const{name, value, type, checked} = event.target
     setFormData((prevFormData) => {
       return {
         ...prevFormData,
-        [event.target.name]: event.target.value,
+        [name]: type === "checkbox" ? checked : value,
       };
     });
   }
@@ -30,44 +33,67 @@ export default function FormPage() {
         experts will be in touch
       </p>
       <container className="form-container">
-      <form>
-        <p className="input-info">First Name*</p>
-        <input className="callback-input"
-          type="text"
+        <form>
+          <p className="input-info">First Name*</p>
+          <input
+            className="callback-input"
+            type="text"
+            onChange={handleChange}
+            name="firstName"
+            value={formData.firstName}
+          />
+          <p className="input-info">Last Name*</p>
+          <input
+            className="callback-input"
+            type="text"
+            onChange={handleChange}
+            name="lastName"
+            value={formData.lastName}
+          />
+          <p className="input-info">Email Address*</p>
+          <small className="input-info">
+            If you are an existing customer, please provide the email address
+            associated with your account.
+          </small>
+          <input
+            className="callback-input"
+            type="number"
+            onChange={handleChange}
+            name="emailAddress"
+            value={formData.emailAddress}
+          />
+          <p className="input-info">Phone Number*</p>
+          <input
+            className="callback-input"
+            type="number"
+            onChange={handleChange}
+            name="phoneNumber"
+            value={formData.phoneNumber}
+          />
+          <p className="input-info">Additional Info</p>
+          <textarea className="textarea-input"
+            value={formData.info}
+            onChange={handleChange}
+            name="info"
+          />
+          <input className="checkbox-input"
+          type="checkbox"
+          id="marketing"
+          checked={formData.marketing}
           onChange={handleChange}
-          name="firstName"
-          value={formData.firstName}
-        />
-        <p className="input-info">Last Name*</p>
-        <input className="callback-input"
-          type="text"
+          name="marketing"
+           />
+           <label htmlFor="marketing"><small>I would you like to receive helpful email, SMS and similar messages.</small></label>
+           <input className="checkbox-input"
+          type="checkbox"
+          id="over18"
+          checked={formData.over18}
           onChange={handleChange}
-          name="lastName"
-          value={formData.lastName}
-        />
-        <p className="input-info">Email Address*</p>
-        <small className="input-info">
-          If you are an existing customer, please provide the email address
-          associated with your account.
-        </small>
-        <input className="callback-input"
-          type="number"
-          onChange={handleChange}
-          name="emailAddress"
-          value={formData.emailAddress}
-        />
-        <p className="input-info">Phone Number*</p>
-        <input className="callback-input"
-          type="number"
-          onChange={handleChange}
-          name="phoneNumber"
-          value={formData.phoneNumber}
-        />
-        <p className="input-info">Additional Info</p>
-        <textarea value={formData.info} onChange={handleChange} name="info" className="textarea-input"/>
-
-  <button className="button-request-callback">Request callback</button>
-      </form>
+          name="over18"
+           />
+           <label htmlFor="over18"><small>I confirm that I am 18 years or over and have read the terms and conditions</small></label>
+          <button className="button-request-callback">Request callback</button>
+        </form>
       </container>
     </div>
   );

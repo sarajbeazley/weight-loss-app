@@ -4,7 +4,9 @@ export default function MainPage(){
    return(
     <div className="container">
       <nav className="nav-bar">
-        <p className="logo">LOGO</p>
+        <p>
+          <img className="logo" src="https://t3.ftcdn.net/jpg/02/00/59/16/240_F_200591657_hadzwcNvSeW9Y8ny0koAfv0hHPBtWoS4.jpg"/>
+        </p>
         <p className="about"><b>About Us</b></p>
         <p className="surgery"><b>Surgery</b></p>
         <p className="shop"><b>Shop</b></p>
@@ -59,8 +61,9 @@ export default function MainPage(){
       </main>
       <p className="expert">
         <h1>Ask an Expert</h1>
-        <p className="expert">Do you have a question about surgery? Want to enquire about a procedure? Fill in the form and we will be in touch very soon.</p>
+        <p className="expert-ask">Do you have a question about surgery? Want to enquire about a procedure? Fill in the form and we will be in touch very soon.</p>
       </p>
+      <container className="expert-form-container">
       <form className="expert-form">
         <input type="text" placeholder="First Name" />
         <input type="text" placeholder="Last Name" />
@@ -68,9 +71,16 @@ export default function MainPage(){
         <input type="phone" placeholder="Phone Number" />
         <textarea type="message" placeholder="Message" />
       </form>
+      </container>
       <footer className="footer">
-        This is the footer: Here will go contact details and other links
+      <p className="contact"><b>Contact Us</b></p>
+        <p className="blog"><b>Blog</b></p>
+        <p className="testimonials"><b>Testimonials</b></p>
+        <p className="community"><b>Community</b></p>
+        <p className="support"><b>Support</b></p>
       </footer>
+      <small>2023 CoName. All rights reserved.</small>
+        <small>Registered in England No. 210580. Address 286 Kilburn Lane, London W10 4BW, England. Terms and conditions subject to change without notice.</small>
     </div>
    )
 
