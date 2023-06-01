@@ -56,13 +56,15 @@ export default function MainPage(){
           </section>
         </main>
       </main>
-      <p className="fill-out-form">
-        <b>Please fill out the form below to request a call back</b>
+      <p className="expert">
+        <h1>Ask an Expert</h1>
+        <p>Do you have a question about surgery? Want to enquire about a procedure? Fill in the form and we will be in touch very soon.</p>
       </p>
       <form className="form">
         <input type="text" placeholder="First Name" />
         <input type="text" placeholder="Last Name" />
-        <input type="text" placeholder="Phone Number" />
+        <input type="email" placeholder="Email" />
+        <input type="phone" placeholder="Phone Number" />
       </form>
       <footer className="footer">
         This is the footer: Here will go contact details and other links
