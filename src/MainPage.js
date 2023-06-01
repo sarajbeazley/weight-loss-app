@@ -32,7 +32,7 @@ export default function MainPage(){
           </h2>
 
           <img
-            src="https://quickbooks.intuit.com/uk2/uk/uk-2021//assets/home/promo-90-6.jpg"
+            src="https:weight-loss-FEATURE-GettyImages-580503159-1024x1024.jpeg"
             alt="random-image"
           ></img>
         </main>

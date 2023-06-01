@@ -102,7 +102,9 @@ button:hover {
 }
 
 h1 {
-  border: dotted orange
+  border: dotted orange;
+  text-align: center;
+  color: #282c34;
 }
 
 h2 {
@@ -174,9 +176,65 @@ textarea{
   margin-top: 40px;
 }
 
-.form{
-  margin-top: 50px ;
+.form-body{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+.blue{
+  color:#34BFFF;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-bottom: 20px;
+  
+}
+
+
+form{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 20px;
+  width: 350px;  
+  justify-content: center;
+  align-items: center;
+}
+
+.callback-input{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  height: 30px;
+  text-indent: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+  display: inline;
+  width: 350px;
+  
+}
+
+.textarea-input{
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 80px;
+  width: 350px;
+  border: 1px solid green;
+  border-radius: 5px;
+  display: inline;
+}
+
+.input-info{
+  margin-left: 5px;
+}
+
 
 .footer {
   margin-top: 50px;
