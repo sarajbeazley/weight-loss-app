@@ -107,6 +107,7 @@ button:hover {
 h1 {
   text-align: center;
   color: #282c34;
+  margin-bottom: 10px;
 
 }
 
@@ -180,8 +181,7 @@ textarea {
 .expert {
   margin-top: 40px;
   text-align: center;
-  
-  
+ 
 }
 
 .expert-ask{
@@ -218,6 +218,7 @@ textarea {
   color: green;
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 20px;;
   font-size: 1.2rem;
 }
 
@@ -225,8 +226,9 @@ textarea {
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
   margin-bottom: 20px;
+  margin-top: 20px;
   border: 1px solid green;
 
 
@@ -289,12 +291,13 @@ form {
 .footer {
   display: grid;
   grid-template-columns: 180px 180px 180px 180px 180px;
-background-color: white;
+  background-color: white;
   padding: 20px;
   font-size: medium;
   color: #282c34;
   place-items: center;
   margin-bottom: 10px;
+  margin-top: 100px;
 
 }
 
