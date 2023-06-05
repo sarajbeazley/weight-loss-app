@@ -34,8 +34,6 @@ body {
 img.logo{
   width: 90px;
   height: 90px;
-  
-  
 }
 
 p {
@@ -101,14 +99,12 @@ button:hover {
   transition: background-colour 250ms;
   margin-top: 20px;
   font-size: 1rem;
-
 }
 
 h1 {
   text-align: center;
   color: #282c34;
   margin-bottom: 10px;
-
 }
 
 h2 {
@@ -117,7 +113,6 @@ h2 {
 
 img {
   width: 500px;
-
 }
 
 .questions {
@@ -185,7 +180,7 @@ textarea {
 }
 
 .expert-ask{
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -195,6 +190,7 @@ textarea {
   align-items: center;
   height: 30vh;
   margin-bottom: 30px;
+  margin-top: 30px;
   
 }
 
@@ -202,10 +198,21 @@ textarea {
   display: grid;
   grid-template-columns: 300px 300px;
   gap: 10px;
-  margin-top: 80px;
 
   }
 
+  .expert-submit{
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px;
+    border: 1px solid green;
+    cursor: pointer;
+    transition: background-colour 250ms;
+    margin-top: 20px;
+    font-size: 1rem;
+    width: 150px;
+    
+  }
 
 .form-body {
   display: grid;
@@ -230,8 +237,6 @@ textarea {
   margin-bottom: 20px;
   margin-top: 20px;
   border: 1px solid green;
-
-
 }
 
 form {
@@ -267,7 +272,7 @@ form {
 }
 
 .input-info {
-  margin-left: 5px;
+  margin-left: px;
 }
 
 .button-request-callback {
@@ -284,9 +289,9 @@ form {
 }
 
 .checkbox-input{
- width:15px
+ width:15px;
+ margin-top: 10px;
 }
-
 
 .footer {
   display: grid;

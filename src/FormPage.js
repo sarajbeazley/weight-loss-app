@@ -24,6 +24,11 @@ export default function FormPage() {
     });
   }
 
+  function handleSubmit(event){
+    event.preventDefault()
+    console.log(formData)
+  }
+
   return (
     <div className="form-body">
       <p className="green-text">Request A Callback | Weight Loss Specialists</p>
@@ -33,7 +38,7 @@ export default function FormPage() {
         experts will be in touch
       </p>
       <container className="form-container">
-        <form>
+        <form onSubmit={handleSubmit}>
           <p className="input-info">First Name*</p>
           <input
             className="callback-input"
@@ -57,7 +62,7 @@ export default function FormPage() {
           </small>
           <input
             className="callback-input"
-            type="number"
+            type="email"
             onChange={handleChange}
             name="emailAddress"
             value={formData.emailAddress}
@@ -76,6 +81,7 @@ export default function FormPage() {
             onChange={handleChange}
             name="info"
           />
+          <div>
           <input className="checkbox-input"
           type="checkbox"
           id="marketing"
@@ -84,6 +90,8 @@ export default function FormPage() {
           name="marketing"
            />
            <label htmlFor="marketing"><small>I would you like to receive helpful email, SMS and similar messages.</small></label>
+           </div>
+           <div>
            <input className="checkbox-input"
           type="checkbox"
           id="over18"
@@ -92,6 +100,7 @@ export default function FormPage() {
           name="over18"
            />
            <label htmlFor="over18"><small>I confirm that I am 18 years or over and have read the terms and conditions</small></label>
+           </div>
           <button className="button-request-callback">Request callback</button>
         </form>
       </container>
