@@ -1,17 +1,35 @@
 import { Link } from "react-router-dom";
+import ExpertForm from "./components/ExpertForm";
+import Facebook from "./components/Facebook";
 
-export default function MainPage(){
-   return(
+export default function MainPage() {
+  return (
     <div className="container">
-    <nav className="nav-bar">
+      <nav className="nav-bar">
         <p>
-          <img className="logo" src="https://t3.ftcdn.net/jpg/02/00/59/16/240_F_200591657_hadzwcNvSeW9Y8ny0koAfv0hHPBtWoS4.jpg"/>
+          <img
+            className="logo"
+            src="https://t3.ftcdn.net/jpg/02/00/59/16/240_F_200591657_hadzwcNvSeW9Y8ny0koAfv0hHPBtWoS4.jpg"
+          />
         </p>
-        <p className="about"><b>About Us</b></p>
-        <p className="surgery"><b>Surgery</b></p>
-        <p className="shop"><b>Shop</b></p>
-        <p className="talk"><b>Talk to us: 0800 797 4205</b></p>
-        <p className="support"><b>Support</b></p>
+        <p className="about">
+          <b>About Us</b>
+        </p>
+        <p className="surgery">
+          <b>Surgery</b>
+        </p>
+        <p className="shop">
+          <b>Shop</b>
+        </p>
+        <p className="community">
+          <b>Community</b>
+        </p>
+        <p className="blog">
+          <b>Blog</b>
+        </p>
+        <p className="blog">
+          <b>Newsletter</b>
+        </p>
         <button className="button-signup">Sign Up</button>
       </nav>
       <main>
@@ -29,13 +47,14 @@ export default function MainPage(){
               </button>
             </p>
             <p>
-              <Link to="/form"><button className="button-callback">Request a callback</button></Link>
+              <Link to="/form">
+                <button className="button-callback">Request a callback</button>
+              </Link>
             </p>
           </h2>
 
           <img
-            src="https://www.mysouthernhealth.com/wp-content/uploads/2016/02/weight-loss-FEATURE-GettyImages-580503159-320x320.jpg
-            "
+            src="https://www.mysouthernhealth.com/wp-content/uploads/2016/02/weight-loss-FEATURE-GettyImages-580503159-320x320.jpg"
             alt="tape-image"
           ></img>
         </main>
@@ -59,22 +78,45 @@ export default function MainPage(){
           </section>
         </main>
       </main>
-      {/* <p className="expert">
-        <h1>Ask an Expert</h1>
-        <p className="expert-ask">Do you have a question about surgery? Want to enquire about a procedure? Fill in the form and we will be in touch very soon.</p>
-      </p>
-      <container className="expert-form-container">
-      <form className="expert-form">
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="email" placeholder="Email" />
-        <input type="phone" placeholder="Phone Number" />
-        <textarea type="message" placeholder="Message" />
-      </form>
-      </container> */}
-      
+      <ExpertForm />
+      <container className="newsletter-container">
+        <section className="newsletter-left">
+          <p className="sign-up-newsletter">Sign up to our newsletter</p>
+          <small className="newsletter-text">
+            Stay updated with all the latest news and get an exclusive
+            invitation to our events when you subscribe to our emails. Learn
+            more about our Privacy Policy here. Terms and conditions apply.{" "}
+          </small>
+          <p className="email">Email Address</p>
+          <form className="newsletter-form">
+            <input
+              className="email-input"
+              type="email"
+              placeholder="your@address.com"
+            />
+            <button className="newsletter-submit">Submit</button>
+          </form>
+         <Facebook />
+          <img
+            className="socials"
+            src="src/assets/img/instagram-svgrepo-com.svg"
+            alt="twitter"
+          ></img>
+          <img
+            className="socials"
+            src="/assets/img/twitter-black-shape-svgrepo-com.svg"
+            alt="insta"
+          ></img>
+        </section>
+        <section className="newsletter-right">
+          <p className="get-in-touch">Get in Touch</p>
+          <small>+44 800 797 4205 + hello@weight-loss-community.com</small>
+          <p>Join our Community</p>
+          <small>blah blah blah</small>
+        </section>
+       
+      </container>
+     
     </div>
-   )
-
-   
+  );
 }

@@ -21,9 +21,14 @@ body {
   padding: 40px
 }
 
+.green-line{
+  border-top: solid green 10px;
+  padding: 10px;
+}
+
 .nav-bar {
   display: grid;
-  grid-template-columns: 140px 100px 100px 100px 320px 80px 140px;
+  grid-template-columns: 200px 100px 100px 100px 100px 100px 100px 200px;
   background-color: white;
   font-size: medium;
   color: #282c34;
@@ -32,8 +37,9 @@ body {
 }
 
 img.logo{
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
+  /* border: dotted blue; */
 }
 
 p {
@@ -113,6 +119,7 @@ h2 {
 
 img {
   width: 500px;
+  
 }
 
 .questions {
@@ -141,8 +148,6 @@ section {
   margin-top: 20px;
   font-size: 1.2rem;
 }
-
-
 
 @media (min-width: 786px) {
   .main-section {
@@ -190,7 +195,7 @@ textarea {
   align-items: center;
   height: 30vh;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 80px;
   
 }
 
@@ -203,7 +208,7 @@ textarea {
 
   .expert-submit{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 12px;
     border: 1px solid green;
     cursor: pointer;
@@ -211,6 +216,7 @@ textarea {
     margin-top: 20px;
     font-size: 1rem;
     width: 150px;
+
     
   }
 
@@ -229,11 +235,11 @@ textarea {
   font-size: 1.2rem;
 }
 
-.form-container {
+.callback-form-container {
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   margin-bottom: 20px;
   margin-top: 20px;
   border: 1px solid green;
@@ -293,16 +299,95 @@ form {
  margin-top: 10px;
 }
 
+.newsletter-container{
+  display: grid;
+  grid-template-columns: 500px 500px;
+  background-color: #ddd;
+  /* place-items: left; */
+  border: 1px solid green;
+  border-radius: 2px;
+  padding: 60px;
+  margin-top: 20px;
+ 
+}
+
+svg{
+  width:30px;
+}
+
+.newsletter-left{
+  padding: 30px;
+  font-size: 1rem;
+  /* border: dotted blue; */
+  width: 400px;
+
+}
+
+p.sign-up-newsletter{
+  margin-bottom: 10px;
+}
+
+p.email{
+  margin-top: 20px;
+}
+
+.newsletter-right{
+  padding: 30px;
+  line-height: 30px;
+  font-size: 1rem;
+  /* border: dotted blue; */
+  width: 400px;
+  padding-top: 25px;
+  margin-left: 30px;
+}
+
+.newsletter-submit{
+  color: #282c34;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid green;
+  cursor: pointer;
+  transition: background-colour 250ms;
+  margin-top: 20px;
+  margin-left:100px ;
+  font-size: 0.8rem;
+  width:130px;
+}
+
+.email-input{
+  width:250px;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 2px;
+  
+}
+
+.newsletter-text{
+  
+  
+}
+
+.newsletter-form{
+  display: grid;
+  grid-template-columns: 220px 220px;
+  
+}
+
+img.socials{
+  margin-top: 30px;
+  
+}
+
 .footer {
   display: grid;
-  grid-template-columns: 180px 180px 180px 180px 180px;
+  grid-template-columns: repeat(5, 270px);
   background-color: white;
-  padding: 20px;
+  padding: 50px;
   font-size: medium;
   color: #282c34;
   place-items: center;
   margin-bottom: 10px;
-  margin-top: 100px;
+  margin-top: 50px;
 
 }
-

@@ -37,7 +37,7 @@ export default function FormPage() {
         To get started, please provide us with some details and one of our
         experts will be in touch
       </p>
-      <container className="form-container">
+      <container className="callback-form-container">
         <form onSubmit={handleSubmit}>
           <p className="input-info">First Name*</p>
           <input

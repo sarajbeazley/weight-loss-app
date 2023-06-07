@@ -2,12 +2,7 @@ import { useLocation } from "react-router-dom";
 
 
 export default function ExpertForm() {
-    const location = useLocation();
-    const isMainPage = location.pathname === '/';
-
-    if (!isMainPage){
-        return null;
-    }
+  
   return (
     <>
       <p className="expert">
