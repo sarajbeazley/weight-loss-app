@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import ExpertForm from "./components/ExpertForm";
-import Facebook from "./components/Facebook";
+import Newsletter from "./components/Newsletter";
+// import FacebookIcon from "./components/FacebookIcon";
+// import TwitterIcon from "./components/TwitterIcon";
+// import InstaIcon from "./components/InstaIcon";
 
 export default function MainPage() {
   return (
@@ -79,44 +82,7 @@ export default function MainPage() {
         </main>
       </main>
       <ExpertForm />
-      <container className="newsletter-container">
-        <section className="newsletter-left">
-          <p className="sign-up-newsletter">Sign up to our newsletter</p>
-          <small className="newsletter-text">
-            Stay updated with all the latest news and get an exclusive
-            invitation to our events when you subscribe to our emails. Learn
-            more about our Privacy Policy here. Terms and conditions apply.{" "}
-          </small>
-          <p className="email">Email Address</p>
-          <form className="newsletter-form">
-            <input
-              className="email-input"
-              type="email"
-              placeholder="your@address.com"
-            />
-            <button className="newsletter-submit">Submit</button>
-          </form>
-         <Facebook />
-          <img
-            className="socials"
-            src="src/assets/img/instagram-svgrepo-com.svg"
-            alt="twitter"
-          ></img>
-          <img
-            className="socials"
-            src="/assets/img/twitter-black-shape-svgrepo-com.svg"
-            alt="insta"
-          ></img>
-        </section>
-        <section className="newsletter-right">
-          <p className="get-in-touch">Get in Touch</p>
-          <small>+44 800 797 4205 + hello@weight-loss-community.com</small>
-          <p>Join our Community</p>
-          <small>blah blah blah</small>
-        </section>
-       
-      </container>
-     
+      <Newsletter />
     </div>
   );
 }

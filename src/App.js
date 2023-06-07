@@ -10,7 +10,7 @@ function App() {
   return (
 
       <div>
-        <h1>TOGETHER WE ARE STRONGER</h1>
+        {/* <h1>TOGETHER WE ARE STRONGER</h1> */}
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/form" element={<FormPage />} />
