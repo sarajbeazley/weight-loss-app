@@ -21,11 +21,6 @@ body {
   padding: 40px
 }
 
-/* .green-line{
-  border-top: solid green 10px;
-  padding: 10px;
-} */
-
 .nav-bar {
   display: grid;
   grid-template-columns: 200px 100px 100px 100px 100px 100px 100px 200px;
@@ -56,8 +51,6 @@ p {
   transition: background-colour 250ms;
   margin-bottom: 5px;
   width: 100px;
-
-
 }
 
 button:hover {
@@ -110,6 +103,7 @@ h2 {
 
 img {
   width: 500px;
+  border-radius: 3px;
   
 }
 
@@ -124,8 +118,6 @@ img {
 }
 
 .questions {
-  /* display: grid; */
-  /* grid-template-columns: 100px 100px 100px; */
   border: 5px solid rgb(214, 235, 228);
   border-radius: 10px;
   padding: 20px;
@@ -202,7 +194,7 @@ textarea {
   align-items: center;
   height: 30vh;
   margin-bottom: 30px;
-  margin-top: 80px;
+  margin-top: 60px;
    /* border: dotted blue; */
   
 }
@@ -299,7 +291,7 @@ form {
   border: 1px solid green;
   cursor: pointer;
   transition: background-colour 250ms;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 1rem;
 
 }
