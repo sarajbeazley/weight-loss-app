@@ -12,7 +12,7 @@ body {
 
 }
 
-.container {
+.page {
   display: grid;
   grid-template-rows: 100px 1fr 80px;
   /* border: dotted blue; */
@@ -21,10 +21,10 @@ body {
   padding: 40px
 }
 
-.green-line{
+/* .green-line{
   border-top: solid green 10px;
   padding: 10px;
-}
+} */
 
 .nav-bar {
   display: grid;
@@ -75,16 +75,6 @@ button:hover {
 
 }
 
-.main-section-two {
-  display: grid;
-  grid-template-columns:
-    325px 325px 325px;
-  margin-top: 50px;
-  color: #282c34;
-  /* border: dotted blue; */
-
-}
-
 .button-book {
   background-color: #ddd;
   border-radius: 20px;
@@ -123,29 +113,46 @@ img {
   
 }
 
-.questions {
+.main-section-two {
   display: grid;
+  grid-template-columns:
+    334px 334px 334px;
+  margin-top: 50px;
+  /* color: #282c34; */
+  /* border: dotted blue; */
+
+}
+
+.questions {
+  /* display: grid; */
   /* grid-template-columns: 100px 100px 100px; */
   border: 5px solid rgb(214, 235, 228);
+  border-radius: 10px;
   padding: 20px;
   color: white;
   background-color: #282c34;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+ 
 }
 
-section {
-  font-size: large;
-  width: 300px;
+img.festival{
+  width: 280px;
 }
 
-.main-text {
-  margin-top: 20px;
+img.yoga{
+  width: 280px;
+  height:210px;
+}
+
+img.running{
+  width: 280px;
 }
 
 .blue-text {
   color: #34BFFF;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 1.2rem;
 }
 
@@ -219,8 +226,6 @@ textarea {
     font-size: 1rem;
     width: 150px;
     
-
-    
   }
 
 .form-body {
@@ -246,6 +251,8 @@ textarea {
   margin-bottom: 20px;
   margin-top: 20px;
   border: 1px solid green;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 form {
@@ -304,14 +311,13 @@ form {
 
 .newsletter-footer{
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 1fr 1fr;
   background-color: #ddd;
   /* place-items: left; */
   border: 1px solid green;
   border-radius: 2px;
   padding: 15px;
-  margin-top: 20px;
-  
+  margin-top: 20px; 
  
 }
 
@@ -321,9 +327,10 @@ svg{
 
 .newsletter-left{
   padding: 30px;
+  margin-left: 225px;
   font-size: 1rem;
   /* border: dotted blue; */
-  width: 400px;
+  width: 500px;
 
 }
 
@@ -340,7 +347,7 @@ p.email{
   line-height: 30px;
   font-size: 1rem;
   /* border: dotted blue; */
-  width: 400px;
+  width: 500px;
   padding-top: 25px;
   margin-left: 30px;
 }
@@ -390,8 +397,8 @@ svg.socials{
   font-size: medium;
   color: #282c34;
   place-items: center;
-  margin-bottom: 10px;
-  margin-top: 50px;
+  /* margin-bottom: 10px; */
+  /* margin-top: 50px; */
 
 }
 

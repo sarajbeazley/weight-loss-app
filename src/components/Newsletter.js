@@ -17,7 +17,7 @@ export default function Newsletter() {
   };
 
   return (
-    <container className="newsletter-footer">
+    <div className="newsletter-footer">
       <section className="newsletter-left">
         <p className="sign-up-newsletter">Sign up to our Newsletter</p>
         <small className="newsletter-text">
@@ -48,6 +48,6 @@ export default function Newsletter() {
         <p>Join our Community</p>
         <small>blah blah blah</small>
       </section>
-    </container>
+    </div>
   );
 }
