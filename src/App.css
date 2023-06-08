@@ -134,7 +134,6 @@ img {
   font-size: 1.8rem;
 }
 
-
 section {
   font-size: large;
   width: 300px;
@@ -216,6 +215,7 @@ textarea {
     cursor: pointer;
     transition: background-colour 250ms;
     margin-top: 5px;
+    margin-left: 5px;
     font-size: 1rem;
     width: 150px;
     

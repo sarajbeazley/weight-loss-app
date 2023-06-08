@@ -9,7 +9,7 @@ export default function ExpertForm() {
         <h1>Ask an Expert</h1>
         <p className="expert-ask">
           Do you have a question about surgery? Want to enquire about a
-          procedure? Fill in the form and we will be in touch very soon.
+          procedure? Fill in the form below and we will be in touch very soon.
         </p>
       </p>
       <container className="expert-form-container">
