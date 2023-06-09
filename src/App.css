@@ -22,8 +22,11 @@ body {
 }
 
 .nav-bar {
-  display: grid;
-  grid-template-columns: 200px 100px 100px 100px 100px 100px 100px 200px;
+  /* display: grid;
+  grid-template-columns: 200px 100px 100px 100px 100px 100px 100px 200px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
   background-color: white;
   font-size: medium;
   color: #282c34;
@@ -37,6 +40,23 @@ img.logo{
   /* border: dotted blue; */
 }
 
+.surgery{
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.surgery p {
+  text-decoration: none;
+}
+
+.surgery p:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  list-style-type: none;
+}
+
 p {
   font-weight: 300;
 }
@@ -46,11 +66,13 @@ p {
   background-color: #ddd;
   border-radius: 20px;
   padding: 10px;
-  border: 1px solid green;
+  border: 1px solid C;
   cursor: pointer;
-  transition: background-colour 250ms;
+  transition: background-color 250ms;
   margin-bottom: 5px;
   width: 100px;
+  position: relative;
+  left: 280px;
 }
 
 button:hover {
@@ -65,7 +87,10 @@ button:hover {
   color: #282c34;
   border: solid 1px green;
   border-radius: 5px;
+}
 
+.main-text{
+  margin-top: 20px;
 }
 
 .button-book {
@@ -75,7 +100,7 @@ button:hover {
   border: 1px solid green;
   cursor: pointer;
   transition: background-colour 250ms;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 1rem;
 
 }
@@ -87,7 +112,7 @@ button:hover {
   border: 1px solid green;
   cursor: pointer;
   transition: background-colour 250ms;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 1rem;
 }
 
@@ -99,6 +124,7 @@ h1 {
 
 h2 {
   padding: 50px;
+  
 }
 
 img {
@@ -114,7 +140,6 @@ img {
   margin-top: 50px;
   /* color: #282c34; */
   /* border: dotted blue; */
-
 }
 
 .questions {
@@ -125,7 +150,6 @@ img {
   background-color: #282c34;
   text-align: center;
   font-size: 1.5rem;
- 
 }
 
 img.festival{
@@ -149,7 +173,7 @@ img.running{
 }
 
 @media (min-width: 786px) {
-  .main-section {
+  .body {
     grid-template-columns: auto 1fr auto;
     grid-gap: 1.5rem;
     align-items: center;
@@ -178,13 +202,13 @@ textarea {
 }
 
 .expert {
-  margin-top: 40px;
+  margin-top: 60px;
   text-align: center;
  
 }
 
 .expert-ask{
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -193,8 +217,7 @@ textarea {
   justify-content: center;
   align-items: center;
   height: 30vh;
-  margin-bottom: 30px;
-  margin-top: 60px;
+  margin-top: 80px;
    /* border: dotted blue; */
   
 }
@@ -230,18 +253,18 @@ textarea {
 .green-text {
   color: green;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;;
+  margin-top: 40px;
+  /* margin-bottom: 10px; */
   font-size: 1.2rem;
 }
 
-.callback-form-container {
+.callback-form-box {
   display: grid;
   justify-content: center;
   align-items: center;
   height: 70vh;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid green;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -373,10 +396,30 @@ p.email{
   
 }
 
-svg.socials{
-  width: 20px;
+svg{
+  width: 25px;
   margin-top:30px;
-  
+}
+
+.socials-insta{
+  /* width: 25px;
+  margin-top:30px; */
+  position: relative;
+  left: 45px;
+}
+
+.socials{
+  /* width: 25px;
+  margin-top:30px; */
+  position: relative;
+  left: 35px;
+}
+
+.socials-twitter{
+  /* width: 25px;
+  margin-top:30px; */
+  position: relative;
+  left: 25px;
 }
 
 
@@ -402,8 +445,6 @@ svg.socials{
   grid-column: 1 / span 5;
   margin-top: 20px;
   font-size: small;
-
-
 }
 
 

@@ -1,6 +1,6 @@
 export default function TwitterIcon(){
     return (
-        <svg className="socials" xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 20 20">
+        <svg className="socials-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 20 20">
           <g>
             <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
               <g fill="#000" transform="translate(-60 -7521)">

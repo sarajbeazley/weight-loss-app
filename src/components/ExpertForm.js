@@ -20,8 +20,15 @@ export default function ExpertForm() {
     });
   }
 
-  function handleSubmit(event) {
+  function handleSubmit (event) {
     event.preventDefault();
+ setExpertForm({
+  firstName: " ",
+  lastName: " ",
+  emailAddress: " ",
+  phoneNumber: " ",
+  message: " ",
+ });
     console.log(expertForm)
   }
 
@@ -30,8 +37,9 @@ export default function ExpertForm() {
       <p className="expert">
         <h1>Ask an Expert</h1>
         <p className="expert-ask">
-          Do you have a question about surgery? Want to enquire about a
-          procedure? Fill in the form below and we will be in touch very soon.
+          Do you have a question about surgery? 
+          Want to enquire about a
+          procedure?<p className="expert-ask">Fill in the form below and we will be in touch very soon.</p>
         </p>
       </p>
       <container className="expert-form-container">
@@ -41,13 +49,13 @@ export default function ExpertForm() {
             placeholder="First Name"
             onChange={handleChange}
             name="firstName"
-            value={expertForm.firstName}
+            // value={expertForm.text}
           />
           <input type="text" 
           placeholder="Last Name" 
           onChange={handleChange}
           name="lastName"
-          value={expertForm.lastName}
+          value={expertForm.text}
           />
           <input type="email" 
           placeholder="Email" 
@@ -59,7 +67,7 @@ export default function ExpertForm() {
           placeholder="Phone Number" 
           onChange={handleChange}
           name="phoneNumber"
-          value={expertForm.phoneNumber}
+          value={expertForm.phone}
           />
           <textarea type="message" 
           placeholder="Message" 

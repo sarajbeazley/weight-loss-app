@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ExpertForm from "./components/ExpertForm";
 import Newsletter from "./components/Newsletter";
+import SurgeryNav from "./components/SurgeryNav";
 
 export default function MainPage() {
   return (
@@ -16,9 +17,7 @@ export default function MainPage() {
           <p className="about">
             <b>About Us</b>
           </p>
-          <p className="surgery">
-            <b>Surgery</b>
-          </p>
+            <SurgeryNav />
           <p className="shop">
             <b>Shop</b>
           </p>

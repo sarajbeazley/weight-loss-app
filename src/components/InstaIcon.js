@@ -1,6 +1,6 @@
 export default function InstaIcon(){
     return (
-        <svg className="socials" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 192 192">
+        <svg className="socials-insta" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 192 192">
           <g>
             <path
               stroke="#000"
