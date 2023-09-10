@@ -32,8 +32,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Drop Down Menu
 
-<img src="drop down menu.png" alt="landing page" height="600" width="700" />
+<img src="drop down menu.png" alt="landing page" height="600" width="800" />
 
 ### Callback Request Form
 
-<img src="callback form.png" alt="landing page" height="600" width="550" />
+<img src="callback form.png" alt="landing page" height="600" width="600" />
