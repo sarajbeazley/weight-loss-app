@@ -32,7 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Drop Down Menu
 
-<img src="drop down menu.png" alt="landing page" height="600" width="600" />
+<img src="drop down menu.png" alt="landing page" height="600" width="700" />
 
 ### Callback Request Form
 
