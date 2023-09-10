@@ -1,6 +1,6 @@
 # WEIGHT LOSS WEBSITE
 
-A front end project built using React, made for  a friend's father who is a retired surgeon specialising in weight loss.
+A front end project built using React, made for  a friend's father who is a retired surgeon now consulting and advising patients on weight loss.
 
 ## General Info
 
