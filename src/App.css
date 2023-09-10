@@ -87,7 +87,19 @@ body {
   display: flex;
 }
 
+
 .nav ul li {
+
+.button-signup {
+  background-color: #ddd;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid green;
+  cursor: pointer;
+  transition: background-color 250ms;
+  margin-bottom: 5px;
+  width: 100px;
+
   position: relative;
 }
 
