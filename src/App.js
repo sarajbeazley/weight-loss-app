@@ -1,7 +1,6 @@
 import "./App.css";
 import MainPage from "./MainPage";
 import FormPage from "./FormPage";
-
 import Footer from "./components/Footer";
 
 import { Routes, Route } from "react-router-dom";

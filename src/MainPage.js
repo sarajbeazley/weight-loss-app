@@ -7,31 +7,21 @@ export default function MainPage() {
   return (
     <>
       <div className="page">
-        <nav className="nav-bar">
-          <p>
-            <img
-              className="logo"
-              src="https://t3.ftcdn.net/jpg/02/00/59/16/240_F_200591657_hadzwcNvSeW9Y8ny0koAfv0hHPBtWoS4.jpg"
-            />
-          </p>
-          <p className="about">
-            <b>About Us</b>
-          </p>
-            <SurgeryNav />
-          <p className="shop">
-            <b>Shop</b>
-          </p>
-          <p className="community">
-            <b>Community</b>
-          </p>
-          <p className="blog">
-            <b>Blog</b>
-          </p>
-          <p className="blog">
-            <b>Newsletter</b>
-          </p>
-          <button className="button-signup">Sign Up</button>
-        </nav>
+      <nav className="nav-bar">
+  <div className="nav-links">
+    <img
+      className="logo"
+      src="https://t3.ftcdn.net/jpg/02/00/59/16/240_F_200591657_hadzwcNvSeW9Y8ny0koAfv0hHPBtWoS4.jpg"
+    />
+    <p className="about"><b>About Us</b></p>
+    <SurgeryNav />
+    <p className="shop"><b>Shop</b></p>
+    <p className="community"><b>Community</b></p>
+    <p className="blog"><b>Blog</b></p>
+    <p className="blog"><b>Newsletter</b></p>
+  </div>
+  <button className="button-signup"><b>Sign Up</b></button>
+</nav>
         <main>
           <main className="main-section-one">
             <h2>
